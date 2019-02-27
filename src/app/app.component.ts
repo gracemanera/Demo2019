@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Demo2019';
+  appTitle = 'This is What I Want';
+  tooltip = 'This is a tooltip.';
+  inputVar = '';
+
+  changeTitle(){
+    this.appTitle='I changed the title';
+    this.inputVar= 'I changed babyyy';
+  }
+
+  showAlert(){
+    alert(this.inputVar);
+  }
 }

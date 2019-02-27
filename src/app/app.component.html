@@ -1,3 +1,9 @@
 <div>I don't know what to write.</div>
-<div>{{title}}</div>
+<div [title]="tooltip">{{appTitle}}</div>
 <div>Hello there!</div>
+
+<input [(ngModel)]="inputVar">
+
+<button (click)="changeTitle()">Click ME!</button>
+
+<button (click)="showAlert()">Show Alert</button>
